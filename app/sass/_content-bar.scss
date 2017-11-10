@@ -1,0 +1,215 @@
+.content-bar {
+    margin-top: 26px;
+
+    .content-bar-product {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        padding-top: 21px;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-bottom: 45px;
+        box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.09);
+        position: relative;
+
+        hr {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #2d3442;
+            font-size: 24px;
+            font-family: 'Lato-Bold';
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            color: #898d94;
+            font-size: 14px;
+            letter-spacing: 0.10px;
+            line-height: 17px;
+            margin-bottom: 12px;
+        }
+
+        .strengths {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .col-lg-4 {
+                padding: 0;
+            }
+
+            p {
+                color: #2d3442;
+                font-size: 14px;
+                letter-spacing: 0.10px;
+                background-image: url('../images/strengths_p.png');
+                background-position: left center;
+                background-repeat: no-repeat;
+                padding-left: 29px;
+                line-height: 30px;
+            }
+        }
+
+        .strengths .col-lg-4:nth-child(2n) p {
+            margin-left: 18px;
+        }
+
+        .strengths .col-lg-4:nth-child(3n) p {
+            margin-left: 10px;
+        }
+
+        .content-bar-product-product {
+            text-align: center;
+
+            .product_img {
+                min-height: 111px;
+            }
+
+            h5 {
+                color: #2d3442;
+                font-size: 16px;
+                margin-bottom: 10px;
+                margin-top: 8px;
+            }
+
+            li {
+                display: inline-block;
+            }
+
+            li:first-child {
+                color: #898d94;
+                font-size: 14px;
+                text-decoration: line-through;
+            }
+
+            li:last-child {
+                color: #cc1c39;
+                font-size: 18px;
+                font-family: 'Lato-Black';
+                border-left: 1px solid #cccccc;
+                line-height: 22px;
+                margin-left: 2px;
+                padding-left: 5px;
+            }
+
+            button {
+                background-color: #fcb414;
+                color: #2d3442;
+                font-size: 16px;
+                font-family: 'Lato-Bold';
+                background-image: url('../images/button-curt.png');
+                background-repeat: no-repeat;
+                border: 0;
+                border-radius: 50px;
+                line-height: 33px;
+                background-position: 12px center;
+                padding-left: 36px;
+                padding-right: 11px;
+                margin-top: 12px;
+                border: 1px solid rgba(111, 77, 0, 0.00);
+                transition: border-color 0.5s;
+
+                &:hover {
+                    border: 1px solid #6f4d00;
+                }
+            }
+        }
+    }
+
+    .content-bar-product-product:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 21px;
+        bottom: 0;
+        width: 1px;
+        height: 165px;
+        background-color: #eeeeee;
+    }
+
+    .content-bar-product .col-lg-4:nth-child(3n) .content-bar-product-product::after {
+        display: none
+    }
+
+
+    .content-bar-topProduct {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        margin-top: 24px;
+        padding-bottom: 38px;
+        position: relative;
+
+        h3 {
+            background-color: #0e76bc;
+            color: #ffffff;
+            font-size: 24px;
+            font-family: 'Lato-Bold';
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+            line-height: 45px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .product_img {
+            text-align: center;
+            min-height: 157px;
+        }
+
+        .topProduct_block {
+            padding: 0;
+            padding-top: 17px;
+            text-align: center;
+
+            a {
+                color: #898d94;
+                font-size: 13.5px;
+                margin-top: 14px;
+                display: inline-block;
+                transition: color 0.5s;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        button {
+            background-color: #fcb414;
+            color: #2d3442;
+            font-size: 14px;
+            background-image: url('../images/top-product-view.png');
+            background-repeat: no-repeat;
+            border: 0;
+            border-radius: 50px;
+            line-height: 33px;
+            background-position: 26px center;
+            padding-left: 36px;
+            padding-right: 11px;
+            position: absolute;
+            bottom: -18px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 200px;
+            border: 1px solid rgba(111, 77, 0, 0.00);
+            transition: border-color 0.5s;
+
+            &:hover {
+                border: 1px solid #6f4d00;
+            }
+        }
+    }
+
+    .viev-hidden.active {
+        overflow: hidden;
+        max-height: 207px;
+    }
+}

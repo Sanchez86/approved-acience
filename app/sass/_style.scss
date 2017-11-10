@@ -1,0 +1,326 @@
+.clear{clear:both;}
+body {
+    font-family: 'Lato-Regular';
+    letter-spacing: 0;
+    background-color: #f1f3f6;
+
+    * {
+        line-height: 100%;
+        outline: 0;
+    }
+
+    h2 {
+        color: #cc1c39;
+        font-size: 26px;
+        font-family: 'Lato-Bold';
+        letter-spacing: 0;
+        margin-top: 20px;
+        margin-bottom: 4px;
+    }
+
+    .content_top {
+        margin-top: 28px;
+
+        p {
+            color: #2d3442;
+            font-size: 20px;
+            font-family: 'Lato-Light';
+        }
+
+        .discount {
+            min-height: 100px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dddddd;
+            border-right: 0;
+            border-left: 0;
+            margin-left: -42px;
+            margin-right: 42px;
+        }
+
+        .discount__coupon {
+            float: left;
+            background-color: #0e76bc;
+            max-width: 52px;
+            min-height: 98px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            p {
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 18px;
+                transform: rotateZ(90deg);
+                padding-top: 42px;
+                padding-bottom: 18px;
+                transform-origin: center;
+                text-align: center;
+                width: 80px;
+            }
+        }
+
+        .discount__content {
+            float: left;
+            background-image: url('../images/discount_cupon_bg.jpg');
+            background-repeat: no-repeat;
+            background-position: 3px 3px;
+            background-size: inherit;
+            min-height: 100px;
+            padding-top: 11px;
+            padding-left: 23px;
+
+            .discount__content__header {
+                color: #2d3442;
+                font-size: 24.17px;
+            }
+
+            .discount__content__description {
+                color: #898d94;
+                font-size: 16px;
+                margin-top: 2px;
+            }
+
+            .discount__content__couponCode {
+                color: #2d3442;
+                font-size: 18px;
+                margin-top: 9px;
+                position: relative;
+
+                span {
+                    color: #cc1c39;
+                    font-size: 18px;
+                    font-family: 'Lato-Black';
+                    margin-left: -2px;
+                }
+            }
+
+            .fifteen {
+                position: absolute;
+                top: 0;
+                right: 12px;
+                width: 98px;
+                height: 98px;
+                border-radius: 50px;
+                border: 2px dashed #0e76bc;
+                padding: 3px;
+
+                .fifteen__inner {
+                    background-color: #0e76bc;
+                    font-size: 18px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 48px;
+                    font-family: 'Lato-Black';
+                    padding-top: 20px;
+
+                    span {
+                        font-size: 30px;
+                        font-family: 'Lato-Regular';
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    body {
+        .content_top {
+            .discount {
+                margin-left: 0;
+            }
+
+            .discount__content {
+                .discount__content__description {
+                    max-width: 220px;
+                    line-height: 15px;
+                    font-size: 14px;
+                }
+
+                .discount__content__couponCode {
+                    margin-top: 5px;
+                }
+
+                .fifteen {
+                    .fifteen__inne {
+                        font-size: 40px;
+                        padding-top: 22px;
+                    }
+                }
+            }
+        }
+
+        .content-bar {
+            .content-bar-product {
+                .strengths .col-lg-4:nth-child(2n) p {
+                    margin-left: 0;
+                }
+
+                .strengths .col-lg-4:nth-child(3n) p {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .content_top p {
+            font-size: 18px;
+        }
+    } 
+}
+@media only screen and (max-width: 1024px) {
+    .content-bar .viev-hidden.active {
+        overflow: hidden;
+        max-height: 215px;
+    }
+    .left-bar .left-bar-row-4 > div {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content-bar .content-bar-topProduct .topProduct_block a {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 992px){
+    body {
+        .navbar-brand{
+            img{
+                width:100%;
+            }
+        }
+        .content_top {
+            .discount {
+                margin-left: 0;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .content-bar .content-bar-product .content-bar-product-product {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    header .navbar-bottom {
+        margin-top: 0;
+    }
+    header .menue_bottom {
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    header .navbar-top.navbar-nav > li > a {
+        background: none;
+        border-width: 1px;
+        padding: 5px;
+    }
+
+    header .navbar-top.navbar-nav > li > a:hover {
+        border-width: 1px;
+    }
+
+    header .navbar-top > li {
+        position: relative;
+        display: inline-block;
+    }
+    footer .footer_menue {
+        margin-top: 10px;
+    }
+    footer .footer_menue li:first-child a::before{
+        display:none;
+    }
+}
+@media only screen and (max-width: 600px){
+    header .menue_bottom a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header .menue_bottom a {
+        padding: 0 7px;
+        letter-spacing: 0.2px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    body h2{
+        margin-top:0;
+    }
+    header .menue_bottom a:after {
+        display:none;
+    }
+    header .menue_bottom a {
+        padding: 0 12px;
+        letter-spacing: 0.3px;
+        line-height: 22px;
+    }
+    body .content_top .discount {
+        margin-right: 0;
+    }
+    body .content_top .discount__content .fifteen {
+        width: 58px;
+        height: 58px;
+        top: 22px;
+    }
+    body .content_top .discount__content .fifteen .fifteen__inner {
+        font-size: 18px;
+        padding-top: 14px;
+        font-family: 'Lato-Regular';
+    }
+    body .content_top .discount__content .fifteen .fifteen__inner span {
+        font-size: 14px;
+    }
+    body .content_top .discount__content .discount__content__header {
+        color: #2d3442;
+        font-size: 22px;
+    }
+    body .content_top .discount__content .discount__content__couponCode {
+        font-size: 16px;
+    }
+    body .content_top .discount__content .discount__content__couponCode span {
+        font-size: 14px;
+    }
+    .navbar-default .navbar-brand {
+        width: 100%;
+        max-width: 231px;
+        margin-top: 8px;
+    }
+    body .content_top p {
+        font-size: 16px;
+    }
+    footer .footer_menue li a:before{
+        display:none;
+    }
+    footer .footer_menue li a {
+        text-decoration: underline;
+        line-height: 20px;
+        line-height: 24px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    header .navbar-bottom.navbar-nav > li > a:last-child{
+        padding-right:35px;
+    }
+    .navbar-collapse{
+        text-align:center;
+    }
+    header .navbar-top.navbar-nav > li > a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .content-bar .content-bar-product {
+        padding-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 320px){
+    body .content_top p {
+        font-size: 14px;
+    }
+    body .content_top .discount__content .discount__content__description {
+        max-width: 210px;
+    }
+}
